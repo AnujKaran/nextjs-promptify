@@ -67,8 +67,10 @@ const UpdatePrompt = () => {
 };
 
 export default function updatePromtSuspense (){
+
+  return(
   <Suspense fallback={<div>Loading...</div>}>
       
       <UpdatePrompt/>
-    </Suspense>
+    </Suspense>)
 };
