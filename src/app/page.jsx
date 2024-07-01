@@ -1,6 +1,7 @@
 import Feed from "@/components/Feed";
-
+import {Suspense} from 'react'
 const Home = () => (
+  <Suspense fallback={<div>Loading...</div>}>
   <section className='w-full flex-center flex-col'>
     <h1 className='head_text text-center'>
       Get your all  required prompts
@@ -14,6 +15,7 @@ const Home = () => (
 
     <Feed />
   </section>
+  </Suspense>
 );
 
 export default Home;
